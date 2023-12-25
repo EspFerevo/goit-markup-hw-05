@@ -531,7 +531,61 @@
           type="button"
           aria-label="modal close button"
         ></button>
+        <svg class="modal-icon-x" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
         <p class="modal-text">Leave your contacts and we will call you back</p>
+
+        <form class="modal-form" name="modal">
+          <label class="form-label" for="user-name">Name</label>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              id="user-name"
+              name="user-name"
+            />
+            <svg class="modal-svg-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+
+          <label class="form-label" for="user-phone">Phone</label>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              id="user-phone"
+              name="user-phone"
+            />
+            <svg class="modal-svg-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+
+          <label class="form-label" for="user-email">Email</label>
+          <div class="form-field">
+            <input
+              class="form-input"
+              type="text"
+              id="user-email"
+              name="user-email"
+            />
+            <svg class="modal-svg-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+
+          <div class="form-wrapper">
+            <label for="user-message" class="form-area">Comment</label>
+            <textarea
+              class="form-message"
+              name="user-message"
+              id="user-message"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+        </form>
       </div>
     </div>
   </body>
