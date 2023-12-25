@@ -613,6 +613,7 @@ img {
 
 .footer-sub-svg {
   fill: currentColor;
+  margin-left: 16px;
 }
 
 /*Modal window*/
