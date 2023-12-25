@@ -633,8 +633,8 @@ img {
   visibility: hidden;
   pointer-events: none;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  visibility: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-open {
@@ -681,8 +681,8 @@ img {
 
   cursor: pointer;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-x {
@@ -830,7 +830,7 @@ img {
 
 /*Checkbox*/
 
-.form-checkbox {
+.form-checkbox-div {
   margin-bottom: 24px;
 }
 
@@ -877,33 +877,34 @@ img {
   text-decoration-line: underline;
 }
 
-/*modal btn
-.modal-btn {
+/*Send checkbox*/
+
+.btn-checkbox {
   display: block;
+  margin: 0 auto;
+  margin-bottom: 24px;
+
+  min-width: 169px;
+  height: 56px;
+
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5em;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
+
   color: white;
+  cursor: pointer;
   background-color: #4d5ae5;
-  min-width: 169px;
-  height: 56px;
+
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  margin: 48px auto;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover {
+.btn-checkbox:focus,
+.btn-checkbox:hover {
   background-color: #404bbf;
 }
-
-.modal-btn:focus {
-  background-color: #404bbf;
-}
-
-.modal-btn {
-  cursor: pointer;
-}
-*/
