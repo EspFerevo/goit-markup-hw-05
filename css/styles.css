@@ -557,6 +557,8 @@ img {
 }
 
 .footer-input {
+  color: #ffffff;
+
   width: 264px;
   height: 40px;
   background-color: transparent;
@@ -569,7 +571,7 @@ img {
   letter-spacing: 0.04em;
 }
 .footer-input::placeholder {
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
