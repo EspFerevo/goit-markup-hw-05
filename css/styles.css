@@ -544,7 +544,7 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5em;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 .form-sub {
@@ -564,6 +564,9 @@ img {
   padding: 8px 16px;
   border: 1px solid #fff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
 }
 .footer-input::placeholder {
   color: #fff;
@@ -578,7 +581,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  min-width: 165px;
+  height: 40px;
   padding: 8px 24px;
   gap: 16px;
   border-radius: 4px;
@@ -587,6 +591,17 @@ img {
   color: white;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Button Text */
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5em; /* 150% */
+  letter-spacing: 0.04em;
+
+  cursor: pointer;
+
+  border: none;
 }
 
 .footer-btn-sub:hover,
@@ -618,7 +633,7 @@ img {
   pointer-events: none;
 }
 
-.backdrop.is-open {
+.backdrop. {
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
