@@ -656,6 +656,8 @@ img {
   border-radius: 4px;
   background-color: #fcfcfc;
 
+  padding: 72px 24px 24px 24px;
+
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
@@ -709,7 +711,6 @@ img {
 }
 
 .modal-text {
-  padding: 72px 24px 24px 24px;
   color: #2e2f42;
   text-align: center;
 
@@ -879,6 +880,12 @@ img {
   line-height: 16px;
   letter-spacing: 0.04em;
   text-decoration-line: underline;
+}
+
+.form-checkbox-input:checked + .label-checkbox-span {
+  background-color: #404bbf;
+  border: none;
+  fill: var(--checked-fill-color, #f4f4fd);
 }
 
 /*Send checkbox*/
