@@ -709,6 +709,10 @@ img {
   border: none;
 }
 
+.modal-btn:focus .modal-x {
+  fill: white;
+}
+
 .modal-btn:hover .modal-x {
   fill: white;
 }
