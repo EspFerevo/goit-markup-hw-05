@@ -621,9 +621,11 @@ img {
   top: 0;
   left: 0;
 
+  /*mark
   display: flex;
   align-items: center;
   justify-content: center;
+*/
 
   width: 100%;
   height: 100%;
@@ -649,7 +651,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 408px;
+  width: 408 px;
   min-height: 584px;
   transform: translate(-50%, -50%) scale(1);
   flex-shrink: 0;
@@ -732,10 +734,11 @@ img {
 
 .modal-form {
   display: flex;
-  width: 360px;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 24px;
+
+  /*margin-left: 24px mark */
 }
 
 .form-label {
@@ -776,6 +779,12 @@ img {
   border-color: #4d5ae5;
 }
 
+/*mark from Serhii*/
+
+.form-input:focus + .modal-svg-icon {
+  fill: #4d5ae5;
+}
+
 .modal-svg-icon {
   position: absolute;
 
@@ -784,10 +793,6 @@ img {
   transform: translateY(-50%);
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal-svg-icon:focus {
-  fill: #4d5ae5;
 }
 
 /*Text area*/
@@ -850,6 +855,7 @@ img {
   border: 0;
 }
 
+/*mark
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -859,6 +865,22 @@ img {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+*/
+
+/*hidden from mentor*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .label-checkbox {
@@ -886,6 +908,10 @@ img {
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  margin-right: 8px;
+}
+
+.privacy-link {
   color: #4d5ae5;
   font-size: 12px;
   font-style: normal;
@@ -895,10 +921,7 @@ img {
   text-decoration-line: underline;
 }
 
-.form-checkbox-icon {
-}
-
-.form-checkbox-input:checked + .label-checkbox-span {
+.form-checkbox-input:checked + .label-checkbox > .label-checkbox-span {
   background-color: #404bbf;
   border: none;
   fill: var(--checked-fill-color, #f4f4fd);
